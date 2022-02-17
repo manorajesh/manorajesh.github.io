@@ -1,4 +1,11 @@
 img {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
