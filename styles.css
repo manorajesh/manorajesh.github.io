@@ -37,6 +37,10 @@ a:hover {
   color: white;
 }
 
+marquee {
+  font-size: 6vmin;
+}
+
 @import url("https://p.typekit.net/p.css?s=1&k=yoj1mzf&ht=tk&f=175.12641.43889.43890&a=6761704&app=typekit&e=css");
 
 @font-face {
