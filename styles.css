@@ -62,15 +62,15 @@ hr {
 pre {
   font-size: 20px;
   font-family: 'courier';
-  color: white;
+  color: gray;
   overflow: hidden;
   animation: fadein 1s linear 1;
-  opacity: 0.1;
+  opacity: 0.2;
 }
 
 @keyframes fadein {
   0% { opacity: 0; }
-  100% { opacity: 0.1; }
+  100% { opacity: 0.2; }
 }
 
 
