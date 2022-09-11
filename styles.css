@@ -59,6 +59,21 @@ hr {
   border-radius: 50px;
 }
 
+pre {
+  font-size: 20px;
+  font-family: 'courier';
+  color: white;
+  overflow: hidden;
+  animation: fadein 1s linear 1;
+  opacity: 0.1;
+}
+
+@keyframes fadein {
+  0% { opacity: 0; }
+  100% { opacity: 0.1; }
+}
+
+
 @import url("https://p.typekit.net/p.css?s=1&k=yoj1mzf&ht=tk&f=175.12641.43889.43890&a=6761704&app=typekit&e=css");
 
 @font-face {
