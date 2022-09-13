@@ -7,7 +7,7 @@ function setup() {
     rand = random(-10, 10);
     offset = 0;
     offset_inc = 0.0001;
-    font_size = textWidth(" ", "bold 10px monospace")
+    font_size = textWidth(" ", "bold 20px monospace")
     cWidth = window.innerWidth/font_size*0.91;
     cHeight = window.innerHeight/font_size*0.13;
 }

@@ -6,6 +6,7 @@ img {
 .center {
   padding-left:2vw;
   width: 50%;
+  white-space: nowrap;
 }
 
 p {
@@ -23,6 +24,7 @@ h1 {
   width: 50%;
   font-size: 3vmin;
   color: cadetblue;
+  font-weight: 200;
 }
 
 a:link {
@@ -57,15 +59,27 @@ hr {
   height: 3px;
   border: 0px;
   border-radius: 50px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
-pre {
+.ascii-background {
   font-size: 20px;
   font-family: 'courier';
   color: gray;
   overflow: hidden;
   animation: fadein 1s linear 1;
   opacity: 0.2;
+}
+
+.text-input {
+  font-family: 'courier new';
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 3vmin;
+  color: rgb(136, 160, 161);
+  display: inline;
 }
 
 @keyframes fadein {
