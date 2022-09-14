@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>~/</title>
   <link rel="stylesheet" href="styles.css">
@@ -7,11 +8,16 @@
   <script src="background.js"></script>
   <script src="prompt.js"></script>
 </head>
-<body style="background-color: #323437; transition: all 0.25s ease 0s, transform 0.05s ease 0s; cursor: crosshair;" onload="keyListener()">
+
+<body onload="keyListener()">
   <div class="center">
-    <h1 style="display: inline">mano:~$ </h1><pre class="text-input" id="prompt"></pre><h1 class="blink" style="display: inline">|</h1>
+    <h1 style="display: inline">mano:~$ </h1>
+    <pre class="text-input" id="prompt"></pre>
+    <h1 class="blink" style="display: inline">|</h1>
+    <input type="hidden"> <!-- To force keyboard on mobile -->
   </div>
   <hr>
-  <pre id="ascii-background" class="ascii-background"></pre>
+  <pre id="ascii-background" class="ascii-background" style="height: 92vh;"></pre>
 </body>
+
 </html>

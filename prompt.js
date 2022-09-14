@@ -1,13 +1,13 @@
-async function keyListener() {
-    document.addEventListener('keydown', function(event) {
-        let prompt = document.getElementById("prompt");
-        event.preventDefault();
-        if (event.keyCode == 8) {
+function keyListener() {
+    var prompt = document.getElementById("prompt");
+    document.addEventListener('keydown', function(e) {
+        let isPrintableKey = e.key.length === 1;
+        if (isPrintableKey) {
+            prompt.innerHTML += e.key;
+        } else if (e.key === "Backspace") {
             prompt.innerHTML = prompt.innerHTML.slice(0, -1);
-        } else if (event.keyCode == 32) {
+        } else if (e.key === "Space") {
             prompt.innerHTML += " ";
-        } else if (48 < event.keyCode && event.keyCode < 90 || event.keyCode <= 186 && event.keyCode >= 222) {
-            prompt.innerHTML += event.key;
         }
     }, true);
 }

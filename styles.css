@@ -67,9 +67,10 @@ hr {
   font-size: 20px;
   font-family: 'courier';
   color: gray;
-  overflow: hidden;
   animation: fadein 1s linear 1;
   opacity: 0.2;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .text-input {
@@ -85,6 +86,13 @@ hr {
 @keyframes fadein {
   0% { opacity: 0; }
   100% { opacity: 0.2; }
+}
+
+body {
+  background-color: #323437; 
+  transition: all 0.25s ease 0s, transform 0.05s ease 0s; 
+  cursor: crosshair;
+  overflow: auto
 }
 
 
