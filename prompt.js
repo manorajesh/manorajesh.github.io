@@ -7,6 +7,7 @@ function keyListener() {
         } else if (e.key === "Backspace") {
             prompt.innerHTML = prompt.innerHTML.slice(0, -1);
         } else if (e.key === "Space") {
+            e.preventDefault();
             prompt.innerHTML += " ";
         }
     }, true);
