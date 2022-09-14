@@ -1,33 +1,23 @@
 <!DOCTYPE html>
+<html>
+
 <head>
-  <title>Mano Rajesh</title>
+  <title>~/</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.2/lib/p5.js"></script>
+  <script src="background.js"></script>
+  <script src="prompt.js"></script>
 </head>
-<html style="background-color:black;">
-  <img src="1.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="2.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="3.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="4.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="5.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="6.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="7.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="8.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="9.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="10.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="11.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="12.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  </br>
-  <img src="13.png" alt="it's a portfolio, I'm not going to describe it" class="center">
-  <p><a href="me.html">Mano Rajesh</a></p>
+
+<body onload="keyListener()">
+  <div class="center">
+    <h1 style="display: inline">mano:~$ </h1>
+    <pre class="text-input" id="prompt"></pre>
+    <h1 class="blink" style="display: inline">|</h1>
+    <input type="hidden"> <!-- To force keyboard on mobile -->
+  </div>
+  <hr>
+  <pre id="ascii-background" class="ascii-background" style="height: 92vh;"></pre>
+</body>
+
 </html>
