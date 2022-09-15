@@ -9,8 +9,8 @@ function setup() {
 
     lineHeight = 20;
     asciiDiv.style.lineHeight = lineHeight + "px";
-    cWidth = window.innerWidth/12;
-    cHeight = window.innerHeight/21;
+    cWidth = window.innerWidth/12-2;
+    cHeight = window.innerHeight/21-2;
     noCanvas();
 }
 
