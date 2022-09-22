@@ -1,6 +1,7 @@
 function keyListener() {
     var prompt = document.getElementById("prompt");
     document.addEventListener('keydown', function(e) {
+        e.preventDefault();
         let isPrintableKey = e.key.length === 1;
         if (isPrintableKey) {
             prompt.innerHTML += e.key;
