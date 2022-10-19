@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Solver</title>
+  <link rel="stylesheet" href="equation.css">
+  <script src="algebra-0.2.6.min.js"></script>
+  <script src="solver.js"></script>
+</head>
+<body>
+<div class="container">
+  <h1 style="display: inline";>Solver</h1>
+  <div class="equation_types">
+    <input type="radio" id="linear" name="equation_type" value="linear" checked>
+    <label for="linear">Linear</label>
+    <input type="radio" id="quadratic" name="equation_type" value="quadratic">
+    <label for="quadratic">Quadratic</label>
+    <input type="radio" id="cubic" name="equation_type" value="cubic">
+    <label for="cubic">Cubic</label>
+    <input type="radio" id="square_root" name="equation_type" value="square_root">
+    <label for="square_root">Square Root</label>
+    <input type="radio" id="absolute" name="equation_type" value="absolute">
+    <label for="absolute">Absolute Value</label>
+  </div>
+  <div class="equation">
+    <input type="text" id="y" value="0" size="3">
+    <span class="operator">=</span>
+    <span class="operator">a(</span>
+    <input type="text" id="x" value="0" size="3">
+    <span class="operator">-</span>
+    <input type="text" id="h" value="0" size="3">
+    <span class="operator">)</span>
+    <span class="operator">+</span>
+    <input type="text" id="k" value="0" size="3">
+  </div>
+  <button id="solve" onclick="solve_it()">Solve</button>
+  <div id="solution"></div>
+</body>
+</html>
