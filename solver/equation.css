@@ -1,45 +1,88 @@
-img {
-  max-width: 50%;
-  height: auto;
-}
+.container{
+  width: 560px;
+  margin: 0 auto;
 
-.center {
-  padding-left:2vw;
-  width: 50%;
-  white-space: nowrap;
 }
 
 p {
   font-family: 'courier';
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
   font-size: 3vmin;
 }
 
 h1 {
   font-family: 'courier new';
+  width: 24vmax;
+  font-size: 4vmin;
+  color: cadetblue;
+  font-weight: 1200;
+  display: inline;
+}
+
+body {
+  background-color: #323437; 
+  transition: all 0.25s ease 0s, transform 0.05s ease 0s; 
+  cursor: crosshair;
+  overflow: auto
+}
+
+.equation_types {
+  font-family: 'courier';
+  font-size: 1.2em;
+  color: #DBE8F9;
+  color:rgb(255, 255, 255);
+  display: inline;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+label {
+  color: #7789a0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.6vmin;
+}
+
+input {
+  font-family: 'courier';
+  margin-right: auto;
+  font-size: 2.8vmin;
+  color: #b19fba;
+  background-color: transparent;
+  border: 1px solid #5b5f67;
+  border-radius: 5px;
+}
+
+.operator {
+  font-family: 'courier';
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  font-size: 3vmin;
   color: cadetblue;
-  font-weight: 200;
+  font-size: 3vmin;
 }
 
-a:link {
-  font-family: 'gilbert-color';
-  text-decoration: none;
+#solve {
+  margin-top: 1em;
+  font-family: 'courier';
+  font-size: 2vmin;
+  color: rgb(255, 255, 255);
+  background-color: #58606d;
+  border: 0px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-
-a:hover {
-  font-family: 'gilbert';
-  color: white;
-}
-
-marquee {
-  font-size: 6vmin;
+#solution {
+  margin-top: 3vmin;
+  font-family: 'courier';
+  font-size: 2vmin;
+  color: #FA6121;
+  background-color: #323437;
+  border: 0.1px solid cadetblue;
+  border-radius: 5px;
+  padding: 1vmin;
+  width: fit-content;
+  margin-left: 0;
 }
 
 .blink {
@@ -54,45 +97,47 @@ marquee {
   50% { color: cadetblue; }
 }
 
+br {
+  display: block;
+  margin: 1.2vmin;
+}
+
 hr {
-  background: cadetblue;
-  height: 3px;
-  border: 0px;
-  border-radius: 50px;
-  overflow: hidden;
-  white-space: nowrap;
+  display: block;
+  margin-top: 0.9vmin;
+  margin-bottom: 2vmin;
+  margin-right: 10rem;
+  color: rgb(71, 76, 77);
 }
 
-.ascii-background {
-  font-size: 20px;
+#clear {
   font-family: 'courier';
-  color: gray;
-  animation: fadein 1s linear 1;
-  opacity: 0.2;
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  overflow-x: hidden; /* Hide horizontal scrollbar */
+  font-size: 2vmin;
+  color: rgb(255, 255, 255);
+  background-color: #58606d;
+  border: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 30%;
+  margin-top: 1vmin;
 }
 
-.text-input {
-  font-family: 'courier new';
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  font-size: 3vmin;
-  color: rgb(136, 160, 161);
-  display: inline;
+#center_it {
+  margin: 16vmin;
 }
 
-@keyframes fadein {
-  0% { opacity: 0; }
-  100% { opacity: 0.2; }
+input[type=radio] {
+  display: none;
 }
 
-body {
-  background-color: #323437; 
-  transition: all 0.25s ease 0s, transform 0.05s ease 0s; 
-  cursor: crosshair;
-  overflow: auto
+input[type="radio"]:checked+label {
+  font-weight: bold;
+  color: #FA6121;
+}
+
+label:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 @import url("https://p.typekit.net/p.css?s=1&k=yoj1mzf&ht=tk&f=175.12641.43889.43890&a=6761704&app=typekit&e=css");
