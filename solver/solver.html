@@ -6,12 +6,13 @@
   <script src="solver.js"></script>
   <script src="index.js"></script>
   <script src="tests.js"></script>
+  <script src="/prompt.js"></script>
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
+<body onload="keyListener()">
   <br id="center_it">
 <div class="container">
-  <h1>Solver</h1><h1 class="blink" style="display: inline">|</h1>
+  <h1 id="prompt">Solver</h1><h1 class="blink" style="display: inline">|</h1>
   <div class="equation_types">
     <input type="radio" id="linear" name="equation_type" value="linear" checked>
     <label for="linear">Linear</label>
@@ -24,7 +25,7 @@
     <input type="radio" id="absolute" name="equation_type" value="absolute_value">
     <label for="absolute">Absolute Value</label>
   </div>
-  <Hr>
+  <hr noshade>
   <div class="equation">
     <input type="text" id="y" value="0" size="4">
     <span class="operator">=</span>
