@@ -1,0 +1,245 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: left;
+  padding-left: 3rem;
+}
+
+.title {
+  font-size: 2rem;
+  padding-bottom: 2rem;
+}
+
+.image-container {
+  overflow-x: hidden; /* allow horizontal scrolling */
+  display: inline-flex;
+  justify-content: flex-start; /* align left */
+  align-items: center; /* center vertically */
+  height: auto; /* set height to control visible portion */
+}
+
+.image {
+  height: 100%; /* set height to match container */
+  max-width: none; /* allow image to expand to full width */
+}
+
+.logo {
+  width: 50rem;
+  height: auto; /* preserve aspect ratio */
+  max-width: 100%; /* limit width to container */
+}
+
+.gene.APP {
+  padding-top: 75%;
+}
+
+.gene.RUNX1 {
+  padding-top: 10%;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.APP {
+  translate: 182%;
+  rotate: 90deg;
+  font-size: 2rem;
+}
+
+.RUNX1 {
+  translate: 122%;
+  rotate: 90deg;
+  font-size: 2rem;
+}
+
+.insights {
+  translate: 184%;
+  overflow: visible;
+  white-space: nowrap;
+  rotate: 90deg;
+}
+
+.works_cited {
+  translate: 300%;
+  overflow: visible;
+  white-space: nowrap;
+  rotate: 90deg;
+}
+
+.genes {
+  position: absolute;
+  right: 48%;
+  top: 25%;
+  display: flex;
+  color: black;
+  opacity: 50%;
+}
+
+.container {
+  position: relative;
+}
+
+.image-container {
+  position: relative;
+  overflow-x: hidden; /* allow horizontal scrolling */
+  display: inline-flex;
+  justify-content: flex-start; /* align left */
+  align-items: center; /* center vertically */
+  height: auto; /* set height to control visible portion */
+}
+
+.image {
+  height: 100%; /* set height to match container */
+  max-width: none; /* allow image to expand to full width */
+}
+
+.genes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  opacity: 50%;
+  z-index: 1; /* make sure genes is on top of image */
+  animation : pulse 4s infinite;
+}
+
+@media only screen and (max-width: 480px) {
+  /* CSS rules for screens smaller than 480px, e.g. smartphones */
+  .insights {
+    translate: 180%;
+    overflow: visible;
+    white-space: nowrap;
+    rotate: 90deg;
+  }
+  
+  .works_cited {
+    translate: 295%;
+    overflow: visible;
+    white-space: nowrap;
+    rotate: 90deg;
+  }
+  
+}
+
+
+.modal {
+  font-family: arial;
+}
+
+.modal {
+  position: fixed;
+  height: 90%;
+  width: 90%;
+  max-width: 1200px;
+  z-index: 1040;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(97, 97, 97);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  outline: 0;
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: 0.5;
+  filter: blur(20px)
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: none;
+}
+
+.modal img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  padding-bottom: 2em;
+}
+
+.model_content {
+  padding: 2rem;
+}
+
+.App.modal-open {
+  filter: blur(5px) !important;
+}
+
+#cd {
+  float: right;
+  width: 25%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  max-width: 500px;
+  padding-bottom: 0;
+}
+
+.modal h1 {
+  margin-top: auto;
+}
+
+.modal p {
+  margin-top: auto;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* css animation to enlarge img by change width of img with keyframes and return to previous size*/
+@keyframes enlarge {
+  to {
+    width: 100%;
+  }
+}
+
+.modal img:hover {
+  animation: enlarge 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.chr_anatomy {
+  background-color: white;
+}
+
+.works_cited_entries {
+  overflow-wrap: break-word;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
