@@ -28,9 +28,6 @@
   height: auto; /* preserve aspect ratio */
   max-width: 100%; /* limit width to container */
 }
-.gene:hover {
-  filter: drop-shadow(0 0 0.5em #646cffaa);
-}
 
 .gene.APP {
   padding-top: 75%;
@@ -83,16 +80,8 @@
   opacity: 50%;
 }
 
-.genes:hover {
-  opacity: 100%;
-}
-
 .container {
   position: relative;
-}
-
-.genes:hover {
-  opacity: 100%;
 }
 
 .image-container {
@@ -121,6 +110,7 @@
   color: black;
   opacity: 50%;
   z-index: 1; /* make sure genes is on top of image */
+  animation : pulse 4s infinite;
 }
 
 @media only screen and (max-width: 480px) {
@@ -141,9 +131,6 @@
   
 }
 
-.genes:hover {
-  opacity: 100%;
-}
 
 .modal {
   font-family: arial;
@@ -243,4 +230,16 @@ button {
 
 .works_cited_entries {
   overflow-wrap: break-word;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
 }

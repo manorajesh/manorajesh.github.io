@@ -15,13 +15,13 @@ function App() {
   }, [images.length]);
 
   const [showModal, setShowModal] = useState(false);
-  const [selectedGene, setSelectedGene] = useState(null);
+  const [selectedGene, setSelectedGene] = useState('');
 
-  const renderBackdrop = (props) => <div className="backdrop" {...props} />;
+  const renderBackdrop = (props: React.HTMLAttributes<HTMLDivElement>) => <div className="backdrop" {...props} />;
 
   const handleClose = () => setShowModal(false);
 
-  const handleGeneClick = (geneName) => {
+  const handleGeneClick = (geneName: string) => {
     setSelectedGene(geneName);
     setShowModal(true);
   };
