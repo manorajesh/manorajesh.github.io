@@ -1,44 +1,36 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  text-align: left;
-  padding-left: 3rem;
-}
-
-.title {
-  font-size: 2rem;
-  
-  padding-bottom: 2rem;
-}
-
-.image-container {
-  overflow-x: hidden; /* allow horizontal scrolling */
-  display: inline-flex;
-  justify-content: flex-start; /* align left */
-  align-items: center; /* center vertically */
-  height: auto; /* set height to control visible portion */
-}
-
-.image {
-  height: 100%; /* set height to match container */
-  max-width: none; /* allow image to expand to full width */
+  padding: 2rem;
+  justify-content: left;
 }
 
 .logo {
-  width: 50rem;
-  height: auto; /* preserve aspect ratio */
-  max-width: 100%; /* limit width to container */
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
 }
-.gene:hover {
-  filter: drop-shadow(0 0 0.5em #646cffaa);
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.gene.APP {
-  padding-top: 75%;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.gene.RUNX1 {
-  padding-top: 10%;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
 .card {
@@ -49,31 +41,51 @@
   color: #888;
 }
 
-.APP {
-  padding-left: 30%;
-  rotate: 90deg;
-  font-size: 2rem;
-}
-
-.RUNX1 {
-  padding-left: 40%;
-  rotate: 90deg;
-}
-
-.insights {
-  padding-left: 45%;
-  overflow: visible;
+.nav {
+  display: inline-block;
+  text-align: right;
+  border-right: #888 solid 1px;
+  padding-right: 1em;
   white-space: nowrap;
-  rotate: 90deg;
+  height: auto;
 }
 
-.genes {
-  position: absolute;
-  width: auto;
-  height: 100%;
-  bottom: 10%;
-  right: 50%;
+.nav.stuck {
+  position: fixed;
+  top: 0;
+}
+
+.title img {
+  height: 5em;
+  padding-right: 5%;
+}
+
+.App {
   display: flex;
-  color: black;
-  opacity: 50%;
+  justify-content: center;
+  max-width: 100%;
+  font-size: min(2vw, 1rem);
+}
+
+.content {
+  padding-left: 1em;
+  max-width: 50%;
+}
+
+@media all and (max-width: 1280px) {
+  .content {
+    max-width: 75%;
+  }
+
+  .content p {
+    font-size: 4vw;
+  }
+}
+
+.nav a {
+  font-weight: 600;
+}
+
+.nav a:hover {
+  filter: drop-shadow(0 0 0.2em #64b1ffaa);
 }
