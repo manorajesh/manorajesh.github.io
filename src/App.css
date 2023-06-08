@@ -87,5 +87,5 @@
 }
 
 .nav a:hover {
-  filter: drop-shadow(0 0 0.2em #64b1ffaa);
+  filter: drop-shadow(0 0 2em #000000aa);
 }
