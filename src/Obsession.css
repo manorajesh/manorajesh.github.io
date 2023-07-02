@@ -1,0 +1,15 @@
+.md h2 {
+    color: #6c6d7d;
+    font-size: 1.5em; /* Smaller than the main title */
+    font-weight: normal; /* Lighter than the main title */
+    margin-top: 0.5em;
+}
+
+.md h1 {
+    margin: 0;
+}
+
+
+.md a {
+    color: #646cff;
+}
